@@ -2,6 +2,7 @@ var topics = ["Mouse", "Lion", "Polar Bear"];
 //var animalAnimal = "";
 
 $(".add").on("click", function(event){
+
   event.preventDefault();
   var $animal = $(".addAnimal").val().trim();
   var animalAnimal = $animal.charAt(0).toUpperCase() + $animal.slice(1);
@@ -9,6 +10,7 @@ $(".add").on("click", function(event){
   topics.push(animalAnimal)
   console.log("inside of oclick topics ", topics)
   createButton();
+  $("input[type='text']").val("");
   //return topics
 });//end of onclick for add button
 
