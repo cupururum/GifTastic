@@ -1,0 +1,27 @@
+body {
+  background-image: url(../images/back.jpg);
+}
+
+.fixTop {
+  height: 40px;
+}
+
+.animals {
+  width: 110px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.gif {
+  display: inline-table;
+  margin-right: 20px;
+}
+
+.giphyDiv {
+  margin-top: 20px;
+
+}
+
+.fixFooter {
+  height: 40px;
+}
