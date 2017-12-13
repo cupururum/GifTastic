@@ -1,4 +1,4 @@
-var topics = ["Mouse", "Lion", "Polar Bear"];
+var topics = ["Kittens", "Lion", "Polar Bear", "Mice", "Pony"];
 //var animalAnimal = "";
 
 $(".add").on("click", function(event){
@@ -7,10 +7,16 @@ $(".add").on("click", function(event){
   var $animal = $(".addAnimal").val().trim();
   var animalAnimal = $animal.charAt(0).toUpperCase() + $animal.slice(1);
   console.log(animalAnimal)
-  topics.push(animalAnimal)
-  console.log("inside of oclick topics ", topics)
-  createButton();
-  $("input[type='text']").val("");
+  if (topics.indexOf(animalAnimal) == -1) {
+    topics.push(animalAnimal)
+    console.log("inside of oclick topics ", topics)
+    createButton();
+    $("input[type='text']").val("");
+  } else {
+    $("input[type='text']").val("");
+    alert("You have already had this topic")
+    //ignore
+  }
   //return topics
 });//end of onclick for add button
 
