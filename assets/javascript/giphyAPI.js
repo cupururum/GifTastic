@@ -1,4 +1,6 @@
-var topics = ["Kittens", "Lion", "Polar Bear", "Mice", "Pony"];
+var topics = ["Kittens", "Lion", "Polar Bear", "Mice", "Pony", "Elephant",
+"Chimpanzee", "Chicken", "Penguin", "Cat", "Rat", "Bat", "Chameleon",
+"Alligator", "Dog", "Bird", "Fox", "Wolf", "Duck", "Bison", "Eagle", "Goat"];
 //var animalAnimal = "";
 
 $(".add").on("click", function(event){
